@@ -27,8 +27,8 @@ const Seattle ={
 
     for(let i=0;i<this.cookPerHour.length;i++){
 
-    let numofcookies=Math.ceil(this.cookPerHour[i] *this.averagecookies) ;
-    this.Avegcook.push(numofcookies);
+      let numofcookies=Math.ceil(this.cookPerHour[i] *this.averagecookies) ;
+      this.Avegcook.push(numofcookies);
     }
     console.log(this.Avegcook);
   } ,
@@ -40,7 +40,7 @@ const Seattle ={
       this.total=this.total + this.Avegcook[i];
     }
     this.Avegcook.push(this.total);
-   console.log(this.total)
+    console.log(this.total)
 
   },
   render:function(){
@@ -93,7 +93,7 @@ const Tokyo ={
       let numofcookies=Math.ceil(this.cookPerHour[i] *this.averagecookies) ;
       this.Avegcook.push(numofcookies);
     }
-    
+
     console.log(this.Avegcook);
   } ,
 
@@ -157,8 +157,8 @@ const Dubai={
       let numofcookies=Math.ceil(this.cookPerHour[i] *this.averagecookies );
       this.Avegcook.push(numofcookies);
     }
-    
-    
+
+
     console.log(this.Avegcook);
   } ,
 
@@ -178,7 +178,7 @@ const Dubai={
     h3.textContent=this.shoploc;
 
     let ul=gvar.appendChild(document.createElement('ul'));
-    
+
     for(let i=0;i<DH.length;i++){
       let li=document.createElement('li');
       ul.appendChild(li);
@@ -223,7 +223,7 @@ const Paris={
       this.Avegcook.push(numofcookies);
 
     }
-    
+
     console.log(this.Avegcook);
   } ,
 
@@ -272,7 +272,7 @@ const Lima={
   cookPerHour :[],
   Avegcook:[],
   total :null ,
-  
+
   cusPerHour :function(){
     for(let i=0;i<DH.length;i++){
       let RD=randomValue(this.min,this.max);
@@ -280,31 +280,31 @@ const Lima={
     }
     console.log(this.cookPerHour);
   } ,
-  
+
   numcook :function(){
     for(let i=0;i<this.cookPerHour.length;i++){
       let numofcookies=Math.ceil(this.cookPerHour[i] * this.averagecookies) ;
       this.Avegcook.push(numofcookies);
     }
-    
+
     console.log(this.Avegcook);
   } ,
-  
+
   totalcook :function(){
-  
+
     for(let i=0;i<this.Avegcook.length;i++){
-  
+
       this.total=this.total + this.Avegcook[i];
     }
     this.Avegcook.push(this.total);
     console.log(this.total)
-  
-  
+
+
   },
   render:function(){
     let h3=gvar.appendChild(document.createElement('h3'));
     h3.textContent=this.shoploc;
-  
+
     let ul=gvar.appendChild(document.createElement('ul'));
     for(let i=0;i<DH.length;i++){
       let li=document.createElement('li');
@@ -315,16 +315,16 @@ const Lima={
     ul.appendChild(tli);
     tli.textContent=`total ${this.total}`;
   }
-  
-  
-  
-  
+
+
+
+
 };
-  
+
 Lima.cusPerHour();
 Lima.numcook();
 Lima.totalcook();
 Lima.render();
-  
-  
+
+
 
