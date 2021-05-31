@@ -13,7 +13,7 @@ const Seattle ={
   averagecookies:6.3 ,
   cookPerHour :[],
   Avegcook:[],
-  total :null ,
+  total :0 ,
 
   cusPerHour :function(){
     for(let i=0;i<DH.length;i++){
