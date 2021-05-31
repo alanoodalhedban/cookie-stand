@@ -25,7 +25,7 @@ const Seattle ={
 
   numcook :function(){
     let numofcookies=this.cookPerHour * this.averagecookies ;
-    this.Avegcook.push(Math.floor(numofcookies));
+    this.Avegcook.push(Math.ceil(numofcookies));
     console.log(this.Avegcook);
   } ,
 
@@ -84,7 +84,7 @@ const Tokyo ={
 
   numcook :function(){
     let numofcookies=this.cookPerHour * this.averagecookies ;
-    this.Avegcook.push(Math.floor(numofcookies));
+    this.Avegcook.push(Math.ceil(numofcookies));
     console.log(this.Avegcook);
   } ,
 
@@ -142,7 +142,7 @@ const Dubai={
 
   numcook :function(){
     let numofcookies=this.cookPerHour * this.averagecookies ;
-    this.Avegcook.push(Math.floor(numofcookies));
+    this.Avegcook.push(Math.ceil(numofcookies));
     console.log(this.Avegcook);
   } ,
 
@@ -199,7 +199,7 @@ const Paris={
 
   numcook :function(){
     let numofcookies=this.cookPerHour * this.averagecookies ;
-    this.Avegcook.push(Math.floor(numofcookies));
+    this.Avegcook.push(Math.ceil(numofcookies));
     console.log(this.Avegcook);
   } ,
 
@@ -256,7 +256,7 @@ const Lima={
 
   numcook :function(){
     let numofcookies=this.cookPerHour * this.averagecookies ;
-    this.Avegcook.push(Math.floor(numofcookies));
+    this.Avegcook.push(Math.ceil(numofcookies));
     console.log(this.Avegcook);
   } ,
 
