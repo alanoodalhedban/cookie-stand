@@ -1,6 +1,22 @@
+*{
+  box-sizing: border-box;
+}
+
 body{background-color: rgb(209, 149, 75);}
 
 
 table, th, td {
     border: 1px solid black;
   }
+
+  a{
+    background-color: #4b0904;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  float: right ;
+  top: 2000;
+
+}

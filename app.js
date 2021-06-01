@@ -77,6 +77,7 @@ function getHeader(){
     th.textContent=DH[i];
   }
 
+
 };
 
 getHeader()
