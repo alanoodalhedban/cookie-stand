@@ -62,14 +62,24 @@ Shops.prototype.render=function(){
   let tli=document.createElement('li');
   ul.appendChild(tli);
   tli.textContent=`total ${this.total}`;
-  
 
-  
+
+};
+function getHeader(){
+  let thead=document.createElement('tr');
+  table.appendChild(thead);
+  let empcell=document.createElement('th');
+  thead.appendChild(empcell);
+  for(let i=0;i<DH.length;i++)
+  {
+    let th=document.createElement('th');
+    thead.appendChild(th);
+    th.textContent=DH[i];
+  }
 
 };
 
-
-
+getHeader()
 
 Shops.prototype.tableD=function(){
   let Srow=document.createElement('tr');
