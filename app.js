@@ -78,9 +78,11 @@ function getHeader(){
   }
 
 
-};
+}
 
-getHeader()
+getHeader();
+
+
 
 Shops.prototype.tableD=function(){
   let Srow=document.createElement('tr');
@@ -95,7 +97,7 @@ Shops.prototype.tableD=function(){
   }
 
 
-}
+};
 let Seattle=new Shops('Seattle',23,65,6.3);
 let Tokyo=new Shops('Tokyo',3,24,1.2);
 let Dubai=new Shops('Dubai',11,38,3.7);
@@ -112,4 +114,23 @@ for (let i=0;i<Arrobj.length;i++){
 
 }
 
+const cookform = document.getElementById('cookieshop');
+cookform.addEventListener('submit',submiting);
+function submiting(event){
+  event.preventDefault();
+  let newshop=event.target.nameloc.value;
+  let newmin=event.target.min.value;
+  let newmax=event.target.max.value;
+  let newavg=event.target.Avg.value;
+
+
+  let newloc=new Shops(newshop,newmin,newmax,newavg);
+  newloc.cusPerHour();
+  newloc.numcook();
+  newloc.totalcook();
+  newloc.render();
+  newloc.tableD();
   
+
+}
+
