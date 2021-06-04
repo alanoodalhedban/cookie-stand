@@ -5,7 +5,7 @@ a{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  
+  float: right;
   top: 2000;
 }
 
@@ -35,6 +35,35 @@ a.B{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  top: 2000; 
+  top: 2000;
+  float: left; 
+  margin-bottom: 1000px;
+
+
 }
-   
+ 
+p{
+  font-family: 'Libre Baskerville', serif;
+}
+h1{
+  font-family: 'Sigmar One', cursive;
+}
+h2{
+  background-color: #4b0904;
+   color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  top: 2000;
+  float: right;
+  margin-bottom: 1000px;
+  
+  font-family: 'Sigmar One', cursive;
+}
+article{
+  font-family: 'Sigmar One', cursive;
+  border-style: solid;
+  border-color:#690a03 ;
+  color: #4b0904;
+}
